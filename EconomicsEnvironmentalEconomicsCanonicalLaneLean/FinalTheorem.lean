@@ -1,0 +1,20 @@
+import canonicalLaneMathlib.AdmissibleClass
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.EnvironmentalExternalities
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.NaturalResourceDynamics
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.OptimalPollutionControl
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.ValuationMethods
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.ClimateEconomyIntegrated
+import EconomicsEnvironmentalEconomicsCanonicalLaneLean.EnvironmentalRegulationMechanismDesign
+
+namespace HautevilleHouse
+namespace EconomicsEnvironmentalEconomicsCanonicalLaneLean
+
+def ConstrainedEconomicsEnvironmentalEconomicsClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_economics_environmental_economics_endgame (A : AdmissibleClass) :
+    ConstrainedEconomicsEnvironmentalEconomicsClosure A := by
+  exact And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end EconomicsEnvironmentalEconomicsCanonicalLaneLean
+end HautevilleHouse
